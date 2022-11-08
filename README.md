@@ -1,4 +1,4 @@
-# fitness_plus
+# lib
 
 A new Flutter project.
 
