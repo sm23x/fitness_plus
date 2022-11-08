@@ -1,5 +1,5 @@
-import 'package:fitness_plus/screens/root_app.dart';
-import 'package:fitness_plus/screens/today_target_detail_page.dart';
+import 'package:fitness_plus/root_app.dart';
+import 'package:fitness_plus/today_target_detail_page.dart';
 import 'package:flutter/material.dart';
 
 Route<dynamic> generateRoute(RouteSettings setting) {

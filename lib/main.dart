@@ -1,12 +1,12 @@
 // ignore_for_file: unused_import
-import 'package:fitness_plus/screens/home_page.dart';
-import 'package:fitness_plus/screens/login.dart';
-import 'package:fitness_plus/screens/root_app.dart';
-import 'package:fitness_plus/screens/today_target_detail_page.dart';
-import 'package:fitness_plus/screens/welcome_view.dart';
+import 'package:fitness_plus/home_page.dart';
+import 'package:fitness_plus/login.dart';
+import 'package:fitness_plus/root_app.dart';
+import 'package:fitness_plus/today_target_detail_page.dart';
+import 'package:fitness_plus/welcome_view.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'router.dart' as router;
+import '../router.dart' as router;
 
 void main() => runApp(MyApp());
 
