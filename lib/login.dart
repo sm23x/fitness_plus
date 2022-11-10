@@ -135,8 +135,7 @@ class _loginState extends State<login> {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamedAndRemoveUntil(
-                            context, '/root_app', (route) => false);
+                        Navigator.pushNamed(context, "/home_page");
                       },
                       child: Container(
                         height: 50,
@@ -202,38 +201,50 @@ class _loginState extends State<login> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Container(
-                          width: 50,
-                          height: 50,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(24),
-                            border: Border.all(
-                              color: black.withOpacity(0.1),
-                            ),
-                            image: DecorationImage(
-                              image: AssetImage(
-                                "assets/images/google.png",
+                        InkWell(
+                          onTap: () {
+                            Navigator.popAndPushNamed(context,
+                                "/https://accounts.google.com/ServiceLogin?elo=1");
+                          },
+                          child: Container(
+                            width: 50,
+                            height: 50,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(24),
+                              border: Border.all(
+                                color: black.withOpacity(0.1),
                               ),
-                              fit: BoxFit.fitWidth,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/google.png",
+                                ),
+                                fit: BoxFit.fitWidth,
+                              ),
                             ),
                           ),
                         ),
                         SizedBox(
                           width: 20,
                         ),
-                        Container(
-                          width: 50,
-                          height: 50,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(24),
-                            border: Border.all(
-                              color: black.withOpacity(0.1),
-                            ),
-                            image: DecorationImage(
-                              image: AssetImage(
-                                "assets/images/facebook.png",
+                        InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, "/https://facebook.com/login/");
+                          },
+                          child: Container(
+                            width: 50,
+                            height: 50,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(24),
+                              border: Border.all(
+                                color: black.withOpacity(0.1),
                               ),
-                              fit: BoxFit.cover,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  "assets/images/facebook.png",
+                                ),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
